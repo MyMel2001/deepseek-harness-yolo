@@ -1,0 +1,29 @@
+{
+  "name": "dsh-plugin-yolo",
+  "version": "1.0.0",
+  "description": "YOLO mode plugin for DeepSeek Harness - auto-accepts all actions and auto-continues on any failure",
+  "main": "./lib/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "presets",
+    "cordis.patch.yml",
+    "install.js"
+  ],
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2"
+  }
+}

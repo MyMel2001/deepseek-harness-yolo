@@ -1,0 +1,3 @@
+name: YOLO mode
+description: Full coding agent with auto-accepted actions and automatic continuation on failure.
+order: 5
